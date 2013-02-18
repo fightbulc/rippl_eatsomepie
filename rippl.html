@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style type="text/css">
+    #circle canvas {
+      margin-right:10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Rippl</h1>
+  <div id="circle"></div>
+
+  <script src="rippl.min.js"></script>
+  <script src="rippl.eatsomepie.js"></script>
+
+  <script>
+    EatSomePie({target:'circle', eaten:50, speed:500});
+    EatSomePie({target:'circle', eaten:10, label: true});
+    EatSomePie({target:'circle', eaten:33, colorEaten:'#c00', label: true});
+    EatSomePie({target:'circle', radius:100, eaten:63, label:'3h left', speed:5000});
+  </script>
+</body>
+</html>
